@@ -13,7 +13,6 @@ let phoneEx = /[0-9]{10}/
 let elements = [{input: name,regex: nameEx}, {input: email,regex: emailEx}, {input: phone, regex: phoneEx}];
 elements.forEach((e)=>{
 	e.input.addEventListener('keyup',()=>{
-		console.log("Hii");
 		let bool = Validate(e.input, e.regex);
 		if(bool){
 			e.input.style.backgroundColor = "lightgreen";
